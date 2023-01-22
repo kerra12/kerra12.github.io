@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiMovie</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+</head>
+<body class="bar">
+    <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button w3-hover-white w3-mobile" onclick="homeNavigation('Home')">Home</button>
+    <button class="w3-bar-item w3-button w3-hover-white w3-mobile" onclick="openNavigation('Anime')">Anime</button>
+    <button class="w3-bar-item w3-button w3-hover-white w3-mobile" onclick="openNavigation('Drakor')">Korea</button>
+    <div class="w3-dropdown-hover w3-mobile">
+        <button class="w3-button ">Genre</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-opacity">
+            <button class="w3-bar-item w3-button w3-hover-light-grey w3-mobile" onclick="openNavigation('Action')">Action</button>
+            <button class="w3-bar-item w3-button w3-hover-light-grey w3-mobile" onclick="openNavigation('Horror')">Horror</button>
+            <button class="w3-bar-item w3-button w3-hover-light-grey w3-mobile" onclick="openNavigation('Romance')">Romance</button>
+            <button class="w3-bar-item w3-button w3-hover-light-grey w3-mobile" onclick="openNavigation('Comedy')">Comedy</button>
+        </div>   
+    </div>
+    <button class="w3-bar-item w3-button w3-hover-white w3-mobile" onclick="openNavigation('About')">About</button>
+    <form class="w3-bar-item w3-black w3-hover-white">
+        <i class=" fa fa-search"></i>
+        <input type="text" name="" id="search-movie" placeholder="Search" onkeyup="search()" style="border: none; outline: none; box-shadow: none; width: auto; font-size: 15px;">
+    </form>
+    <img  class="w3-mobile w3-right" style="height: 40px; padding-right: 20px; max-width: 70px;" src="https://images.creativemarket.com/0.1.0/ps/7821912/600/400/m2/fpnw/wm0/mm-logo-.jpg?1582665320&s=7353e4103e5dd4888925f348c07af418&fmt=webp">
+</div>
+<div id="Home" class="navigation w3-animate-top w3-center w3-dark-grey w3-row bar" style="display: flex; width: 100%; height: 100vh; justify-content: center ;  background-image:url(https://i.pinimg.com/564x/aa/35/de/aa35de8466d6a708ea87d58c024ab543.jpg);background-repeat: no-repeat; background-size: 100% 100vh;">
+    <div class="w3-container w3-padding w3-display-container w3-col" style="background-color:rgb(0, 0, 0, 0.6); width: 100%; margin-top: 20px; height: 630px;">
+        <div class="w3-content w3-section open" style="max-width:350px;height: 100%;">
+            <a href="https://layarkacaxxi.icu/v/z8yg6bjw3116ddy" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s1.indexmovies.xyz/wp-content/uploads/2022/11/film-one-piece-film-red-2022-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/-dgqntpnzzenrem" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s5.indexmovies.xyz/wp-content/uploads/2022/09/film-drifting-home-2022-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/w8-g0bn4egzpyz2" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s4.indexmovies.xyz/wp-content/uploads/2022/04/film-bubble-2022-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/z8yg6bj0n77xm4d" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s1.indexmovies.xyz/wp-content/uploads/2022/10/film-summer-ghost-2021-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/w8-g0bnx80zjwx5" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s6.indexmovies.xyz/wp-content/uploads/2023/01/film-the-goblin-2022-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/j80gzbdl1w4l3wq" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s3.indexmovies.xyz/wp-content/uploads/2023/01/film-the-menu-2022-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/p8-g6bmz-wq3p1y" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s1.indexmovies.xyz/wp-content/uploads/2022/12/film-confession-2022-2-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/w8-g0bnx67x4-pg" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s6.indexmovies.xyz/wp-content/uploads/2023/01/film-sick-2022-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/65y71f073ynljde" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s3.indexmovies.xyz/wp-content/uploads/2022/05/film-jujutsu-kaisen-0-the-movie-gekijouban-jujutsu-kaisen-0-2021-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/0pne0tlrjdmnxqe" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s5.indexmovies.xyz/wp-content/uploads/2022/07/film-broker-2022-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/3zx3kfm141gwxyl" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s5.indexmovies.xyz/wp-content/uploads/2022/06/film-belle-rya-to-sobakasu-no-hime-2021-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/n-kgzu28rz3pr62" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s2.indexmovies.xyz/wp-content/uploads/2022/11/film-my-fathers-dragon-2022-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/n-kgzu2n187xm7r" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s3.indexmovies.xyz/wp-content/uploads/2022/07/film-sword-art-online-progressive-aria-of-a-starless-night-gekijaban-sword-art-online-progressive-hoshi-naki-yoru-no-aria-2021-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/g26y7t-322wpr7m" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s0.indexmovies.xyz/wp-content/uploads/2022/12/film-goodbye-2022-lk21-d21.jpg"></a>
+            <a href="https://layarkacaxxi.icu/v/2kyxpb2zkg30l0z" target="_blank"><img class="mySlides" style="width: 100%;" src="https://s6.indexmovies.xyz/wp-content/uploads/2022/07/film-moloch-2022-lk21-d21.jpg"></a>
+            <p>** Jika saat film di play not found coba restart halaman film lalu play kembali **</p>
+        </div>
+        <button class="w3-button w3-black w3-display-left w3-hover-white" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right w3-hover-white" onclick="plusDivs(1)">&#10095;</button>
+        
+        <div class="w3-row">
+            <a href="https://layarkacaxxi.icu/v/z8yg6bjw3116ddy" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/11/film-one-piece-film-red-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">One Piece Film: Red (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                        <p style="padding: 10px; font-size: 12px;">Action, Adventure, Animation, Japan, HDRip, 2022, 720</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/-dgqntpnzzenrem" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s5.indexmovies.xyz/wp-content/uploads/2022/09/film-drifting-home-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Drifting Home (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                        <p style="padding: 10px; font-size: 12px;">Adventure, Animation, Drama, Japan, BluRay, 2022, 1080</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/w8-g0bn4egzpyz2" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s4.indexmovies.xyz/wp-content/uploads/2022/04/film-bubble-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Bubble (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Animation, Japan, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/z8yg6bj0n77xm4d" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/10/film-summer-ghost-2021-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Summer Ghost (2021)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Animation, Drama, Short, Japan, BluRay, 2021, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/65y71f073ynljde" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s3.indexmovies.xyz/wp-content/uploads/2022/05/film-jujutsu-kaisen-0-the-movie-gekijouban-jujutsu-kaisen-0-2021-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Jujutsu Kaisen 0 (2021)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Animation, Fantasy, Japan, BluRay, 2021, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/n-kgzu2n187xm7r" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s3.indexmovies.xyz/wp-content/uploads/2022/07/film-sword-art-online-progressive-aria-of-a-starless-night-gekijaban-sword-art-online-progressive-hoshi-naki-yoru-no-aria-2021-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">SAO: Progressive (2021)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Animation, Japan, BluRay, 2021, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/3zx3kfm141gwxyl" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s5.indexmovies.xyz/wp-content/uploads/2022/06/film-belle-rya-to-sobakasu-no-hime-2021-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Belle (2021)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Adventure, Animation, Drama, Japan, BluRay, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/j80gzbdy1p-22yl" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s0.indexmovies.xyz/wp-content/uploads/2022/06/film-gintama-the-final-2021-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Gintama: The Final (2021)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Animation, Comedy, Japan, BluRay, 2021, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/w8-g0bnx80zjwx5" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s6.indexmovies.xyz/wp-content/uploads/2023/01/film-the-goblin-2022-lk21-d21.jpg   " style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">The Goblin (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/p8-g6bmz-wq3p1y" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/12/film-confession-2022-2-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Confession (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Crime, Mystery, Thriller, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/118y7ujlm7p-l4y" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/11/film-remember-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Remember (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Drama, Thriller, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/z8yg6bj0-y5ym41" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/10/film-hunt-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Hunt (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                        <p style="padding: 10px; font-size: 12px;">Action, Drama, Mystery, South Korea, WEBDL, 2022, 1080</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/w8-g0bne6dq8eqx" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s4.indexmovies.xyz/wp-content/uploads/2022/08/film-cassiopeia-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Cassiopeia (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                        <p style="padding: 10px; font-size: 12px;">Drama, South Korea, WEBDL, 2022, 1080</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/r8-g5ben8wwmmql" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s2.indexmovies.xyz/wp-content/uploads/2022/07/film-2037-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">2037 (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Family, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/0pne0tlrjdmnxqe" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s5.indexmovies.xyz/wp-content/uploads/2022/07/film-broker-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Broker (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/2kyxpb2z4q7en4k" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s7.indexmovies.xyz/wp-content/uploads/2021/04/film-seobok-2021-lk21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Seobok (2021)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Sci-fi, Thriller, South Korea, BluRay, 2021, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/m81-7b5k24g440z" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/05/film-doctor-strange-in-the-multiverse-of-madness-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Doctor Strange (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Fantasy, United States, BluRay, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/65y71f0jzg237xz" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/07/film-thor-love-and-thunder-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Thor (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Comedy, Australia, United States, BluRay, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/yx8wpue40r82jd8" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/12/film-troll-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Troll (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Adventure, Animation, Drama, Japan, BluRay, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/g26y7t-qdxk0-m2" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s1.indexmovies.xyz/wp-content/uploads/2019/04/film-avengers-endgame-2019-lk21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Avengers: Endgame (2019)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Fantasy, Sci-fi, Usa, BluRay, 2019, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/j80gzbdl1w4l3wq" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s3.indexmovies.xyz/wp-content/uploads/2023/01/film-the-menu-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">The Menu (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Horror, Thriller, United States, BluRay, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/w8-g0bnx67x4-pg" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s6.indexmovies.xyz/wp-content/uploads/2023/01/film-sick-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Sick (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Horror, Thriller, United States, WEBRip, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/dmg5esx0y7jrgjg" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s6.indexmovies.xyz/wp-content/uploads/2023/01/film-talbis-iblis-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Talbis Iblis (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Horror, Mystery, Thriller, Malaysia, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/m81-7b5kr1g2-37" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s0.indexmovies.xyz/wp-content/uploads/2022/12/film-decibel-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Decibel (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Drama, Horror, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/725dntg0zjm5e2-/7f25feba23d3d5251b0ae989a7e99e32" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+               <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s7.indexmovies.xyz/wp-content/uploads/2022/10/film-pearl-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Pearl (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Horror, Canada, United States, BluRay, 2022, 1080</p>
+                </div>
+               </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/2kyxpb2zkg30l0z" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/07/film-moloch-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Moloch (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Horror, Netherlands, BluRay, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/725dntg0ylz-77j" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s4.indexmovies.xyz/wp-content/uploads/2022/10/film-barbarian-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Barbarian (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Horror, Thriller, United States, WEBRip, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/5q56psd3p4dzzn4" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s3.indexmovies.xyz/wp-content/uploads/2022/10/film-hellraiser-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Hellraiser (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Horror, Mystery, Thriller, Serbia, United States, WEBRip, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/l-pg1un4yl24kl0" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s1.indexmovies.xyz/wp-content/uploads/2023/01/film-ditto-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Ditto (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, Fantasy, Romance, South Korea, HDRip, 2022, 480</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/8e50ms8ejpwqy-j" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s6.indexmovies.xyz/wp-content/uploads/2023/01/film-life-is-beautiful-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Life Is Beautiful (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, Musical, Romance, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/w8-g0bnx55e4kjm" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s7.indexmovies.xyz/wp-content/uploads/2022/12/film-bones-and-all-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Bones and All (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, Horror, Romance, Italy, United States, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/118y7ujl6gyx5xg" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s2.indexmovies.xyz/wp-content/uploads/2022/10/film-20th-century-girl-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">20th Century Girl (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, Romance, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/p8-g6bm-mq287z8" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s3.indexmovies.xyz/wp-content/uploads/2022/09/film-zanox-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Zanox (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Crime, Romance, Hungary, WEBRip, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/m81-7b5ggp8g0yk" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/07/film-purple-hearts-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Purple Hearts (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, Music, Romance, United States, WEBRip, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/k8rg3b3x68n1rrz" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/07/film-my-chilling-roommate-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">My Chilling Roommate (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Horror, Romance, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/z8yg6bj46nz-43j" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/02/film-redeeming-love-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Redeeming Love (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, History, Romance, United States, BluRay, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/p8-g6bmzj5klj1l" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/12/film-vir-das-landing-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Vir Das: Landing (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, India, WEBRip, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/l-pg1ungmk0jgpx" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s2.indexmovies.xyz/wp-content/uploads/2022/12/film-the-marriage-app-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">The Marriage App (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Romance, Argentina, WEBRip, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/3zx3kfmyk8n0jkl" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s4.indexmovies.xyz/wp-content/uploads/2022/12/film-violent-night-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Violent Night (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Comedy, Crime, Canada, United States, WEBRip, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/g26y7t-322wpr7m" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s0.indexmovies.xyz/wp-content/uploads/2022/12/film-goodbye-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Goodbye (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Drama, Family, India, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/725dntg0qp75p5w" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s7.indexmovies.xyz/wp-content/uploads/2022/12/film-hawa-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Hawa (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Drama, Family, France, Senegal, WEBDL, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/n-kgzu28rz3pr62" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s2.indexmovies.xyz/wp-content/uploads/2022/11/film-my-fathers-dragon-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">My Father’s Dragon (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Adventure, Animation, Comedy, Ireland, United States, WEBRip, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/5q56psd1xg6dw4g" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s5.indexmovies.xyz/wp-content/uploads/2022/12/film-jaifu-story-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Jaifu Story (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Romance, Thailand, WEBRip, 2022, 1080</p>
+                </div>
+                </div>
+            </a>
+            <a href="https://layarkacaxxi.icu/v/l-pg1un4qg3d65j" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+                <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px;padding-bottom:10px;">
+                    <img src="https://s2.indexmovies.xyz/wp-content/uploads/2022/11/film-lyle-lyle-crocodile-2022-lk21-d21.jpg" style="height: 400px;">
+                    <font style="display:block; padding-top:8px;">Lyle, Lyle, Crocodile (2022)</font>
+                    <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Adventure, Animation, Comedy, United States, WEBRip, 2022, 720</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+    <div id="Anime" class="w3-container navigation w3-animate-opacity w3-row bar w3-padding w3-dark-grey" style="display:none; height: 100vh; background-image:url(https://i.pinimg.com/564x/aa/35/de/aa35de8466d6a708ea87d58c024ab543.jpg);background-repeat: no-repeat; background-size: 100% 100vh;">
+        <a href="https://layarkacaxxi.icu/v/z8yg6bjw3116ddy" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/11/film-one-piece-film-red-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">One Piece Film: Red (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Animation, Japan, HDRip, 2022, 720</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/-dgqntpnzzenrem" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s5.indexmovies.xyz/wp-content/uploads/2022/09/film-drifting-home-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Drifting Home (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Adventure, Animation, Drama, Japan, BluRay, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/w8-g0bn4egzpyz2" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s4.indexmovies.xyz/wp-content/uploads/2022/04/film-bubble-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Bubble (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Animation, Japan, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/z8yg6bj0n77xm4d" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/10/film-summer-ghost-2021-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Summer Ghost (2021)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Animation, Drama, Short, Japan, BluRay, 2021, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/65y71f073ynljde" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s3.indexmovies.xyz/wp-content/uploads/2022/05/film-jujutsu-kaisen-0-the-movie-gekijouban-jujutsu-kaisen-0-2021-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Jujutsu Kaisen 0 (2021)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Animation, Fantasy, Japan, BluRay, 2021, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/n-kgzu2n187xm7r" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s3.indexmovies.xyz/wp-content/uploads/2022/07/film-sword-art-online-progressive-aria-of-a-starless-night-gekijaban-sword-art-online-progressive-hoshi-naki-yoru-no-aria-2021-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">SAO: Progressive (2021)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Animation, Japan, BluRay, 2021, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/3zx3kfm141gwxyl" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s5.indexmovies.xyz/wp-content/uploads/2022/06/film-belle-rya-to-sobakasu-no-hime-2021-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Belle (2021)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Adventure, Animation, Drama, Japan, BluRay, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/j80gzbdy1p-22yl" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s0.indexmovies.xyz/wp-content/uploads/2022/06/film-gintama-the-final-2021-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Gintama: The Final (2021)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Animation, Comedy, Japan, BluRay, 2021, 1080</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div id="Drakor" class="w3-container navigation w3-animate-bottom w3-row bar w3-dark-grey w3-padding" style="display:none ; height: 100vh; background-image:url(https://i.pinimg.com/564x/aa/35/de/aa35de8466d6a708ea87d58c024ab543.jpg);background-repeat: no-repeat; background-size: 100% 100vh;">
+        <a href="https://layarkacaxxi.icu/v/w8-g0bnx80zjwx5" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s6.indexmovies.xyz/wp-content/uploads/2023/01/film-the-goblin-2022-lk21-d21.jpg   " style="height: 400px;">
+                <font style="display:block; padding-top:8px;">The Goblin (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/p8-g6bmz-wq3p1y" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/12/film-confession-2022-2-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Confession (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Crime, Mystery, Thriller, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/118y7ujlm7p-l4y" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/11/film-remember-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Remember (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Drama, Thriller, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/z8yg6bj0-y5ym41" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/10/film-hunt-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Hunt (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Drama, Mystery, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/w8-g0bne6dq8eqx" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s4.indexmovies.xyz/wp-content/uploads/2022/08/film-cassiopeia-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Cassiopeia (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/r8-g5ben8wwmmql" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s2.indexmovies.xyz/wp-content/uploads/2022/07/film-2037-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">2037 (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Family, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/0pne0tlrjdmnxqe" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s5.indexmovies.xyz/wp-content/uploads/2022/07/film-broker-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Broker (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/2kyxpb2z4q7en4k" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s7.indexmovies.xyz/wp-content/uploads/2021/04/film-seobok-2021-lk21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Seobok (2021)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Sci-fi, Thriller, South Korea, BluRay, 2021, 1080</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div id="Action" class="w3-container navigation w3-animate-left bar w3-dark-grey w3-padding" style="display:none; height: 100vh; background-image:url(https://i.pinimg.com/564x/aa/35/de/aa35de8466d6a708ea87d58c024ab543.jpg);background-repeat: no-repeat; background-size: 100% 100vh;">
+        <a href="https://layarkacaxxi.icu/v/w8-g0bnx80zjwx5" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s6.indexmovies.xyz/wp-content/uploads/2023/01/film-the-goblin-2022-lk21-d21.jpg   " style="height: 400px;">
+                <font style="display:block; padding-top:8px;">The Goblin (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/118y7ujlm7p-l4y" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/11/film-remember-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Remember (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Drama, Thriller, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/z8yg6bj0-y5ym41" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/10/film-hunt-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Hunt (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Drama, Mystery, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/2kyxpb2z4q7en4k" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s7.indexmovies.xyz/wp-content/uploads/2021/04/film-seobok-2021-lk21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Seobok (2021)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Sci-fi, Thriller, South Korea, BluRay, 2021, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/z8yg6bjw3116ddy" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/11/film-one-piece-film-red-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">One Piece Film: Red (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Animation, Japan, HDRip, 2022, 720</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/3zx3kfm141gwxyl" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s5.indexmovies.xyz/wp-content/uploads/2022/06/film-belle-rya-to-sobakasu-no-hime-2021-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Belle (2021)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Adventure, Animation, Drama, Japan, BluRay, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/65y71f073ynljde" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s3.indexmovies.xyz/wp-content/uploads/2022/05/film-jujutsu-kaisen-0-the-movie-gekijouban-jujutsu-kaisen-0-2021-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Jujutsu Kaisen 0 (2021)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Animation, Fantasy, Japan, BluRay, 2021, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/n-kgzu2n187xm7r" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s3.indexmovies.xyz/wp-content/uploads/2022/07/film-sword-art-online-progressive-aria-of-a-starless-night-gekijaban-sword-art-online-progressive-hoshi-naki-yoru-no-aria-2021-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">SAO: Progressive (2021)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Animation, Japan, BluRay, 2021, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/g26y7t-qdxk0-m2" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s1.indexmovies.xyz/wp-content/uploads/2019/04/film-avengers-endgame-2019-lk21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Avengers: Endgame (2019)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Fantasy, Sci-fi, Usa, BluRay, 2019, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/m81-7b5k24g440z" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/05/film-doctor-strange-in-the-multiverse-of-madness-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Doctor Strange (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Fantasy, United States, BluRay, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/65y71f0jzg237xz" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s1.indexmovies.xyz/wp-content/uploads/2022/07/film-thor-love-and-thunder-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Thor (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Comedy, Australia, United States, BluRay, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/yx8wpue40r82jd8" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/12/film-troll-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Troll (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Adventure, Drama, Norway, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div id="Horror" class="w3-container navigation w3-animate-right bar bar w3-dark-grey w3-padding" style="display:none; height: 100vh; background-image:url(https://i.pinimg.com/564x/aa/35/de/aa35de8466d6a708ea87d58c024ab543.jpg);background-repeat: no-repeat; background-size: 100% 100vh;">
+        <a href="https://layarkacaxxi.icu/v/j80gzbdl1w4l3wq" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s3.indexmovies.xyz/wp-content/uploads/2023/01/film-the-menu-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">The Menu (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Horror, Thriller, United States, BluRay, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/w8-g0bnx67x4-pg" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s6.indexmovies.xyz/wp-content/uploads/2023/01/film-sick-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Sick (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Horror, Thriller, United States, WEBRip, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/dmg5esx0y7jrgjg" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s6.indexmovies.xyz/wp-content/uploads/2023/01/film-talbis-iblis-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Talbis Iblis (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Horror, Mystery, Thriller, Malaysia, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/m81-7b5kr1g2-37" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s0.indexmovies.xyz/wp-content/uploads/2022/12/film-decibel-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Decibel (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Drama, Horror, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/725dntg0zjm5e2-/7f25feba23d3d5251b0ae989a7e99e32" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+           <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s7.indexmovies.xyz/wp-content/uploads/2022/10/film-pearl-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Pearl (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Horror, Canada, United States, BluRay, 2022, 1080</p>
+                </div>
+           </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/2kyxpb2zkg30l0z" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/07/film-moloch-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Moloch (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Horror, Netherlands, BluRay, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/725dntg0ylz-77j" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s4.indexmovies.xyz/wp-content/uploads/2022/10/film-barbarian-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Barbarian (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Horror, Thriller, United States, WEBRip, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/5q56psd3p4dzzn4" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s3.indexmovies.xyz/wp-content/uploads/2022/10/film-hellraiser-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Hellraiser (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Horror, Mystery, Thriller, Serbia, United States, WEBRip, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div id="Romance" class="w3-container navigation w3-animate-opacity bar bar w3-dark-grey w3-padding" style="display:none; height: 100vh; background-image:url(https://i.pinimg.com/564x/aa/35/de/aa35de8466d6a708ea87d58c024ab543.jpg);background-repeat: no-repeat; background-size: 100% 100vh;">
+        <a href="https://layarkacaxxi.icu/v/l-pg1un4yl24kl0" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s1.indexmovies.xyz/wp-content/uploads/2023/01/film-ditto-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Ditto (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, Fantasy, Romance, South Korea, HDRip, 2022, 480</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/8e50ms8ejpwqy-j" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s6.indexmovies.xyz/wp-content/uploads/2023/01/film-life-is-beautiful-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Life Is Beautiful (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, Musical, Romance, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/w8-g0bnx55e4kjm" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s7.indexmovies.xyz/wp-content/uploads/2022/12/film-bones-and-all-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Bones and All (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, Horror, Romance, Italy, United States, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/118y7ujl6gyx5xg" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s2.indexmovies.xyz/wp-content/uploads/2022/10/film-20th-century-girl-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">20th Century Girl (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, Romance, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/p8-g6bm-mq287z8" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s3.indexmovies.xyz/wp-content/uploads/2022/09/film-zanox-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Zanox (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Crime, Romance, Hungary, WEBRip, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/m81-7b5ggp8g0yk" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/07/film-purple-hearts-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Purple Hearts (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, Music, Romance, United States, WEBRip, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/k8rg3b3x68n1rrz" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/07/film-my-chilling-roommate-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">My Chilling Roommate (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Horror, Romance, South Korea, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/z8yg6bj46nz-43j" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/02/film-redeeming-love-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Redeeming Love (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Drama, History, Romance, United States, BluRay, 2022, 1080</p>
+                </div>
+            </div>
+
+        </a>
+    </div>
+    <div id="Comedy" class="w3-container navigation w3-animate-zoom bar bar w3-dark-grey w3-padding" style="display:none; height: 100vh; background-image:url(https://i.pinimg.com/564x/aa/35/de/aa35de8466d6a708ea87d58c024ab543.jpg);background-repeat: no-repeat; background-size: 100% 100vh;">
+        <a href="https://layarkacaxxi.icu/v/l-pg1un4qg3d65j" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s2.indexmovies.xyz/wp-content/uploads/2022/11/film-lyle-lyle-crocodile-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Lyle, Lyle, Crocodile (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Adventure, Animation, Comedy, United States, WEBRip, 2022, 720</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/p8-g6bmzj5klj1l" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s6.indexmovies.xyz/wp-content/uploads/2022/12/film-vir-das-landing-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Vir Das: Landing (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, India, WEBRip, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/l-pg1ungmk0jgpx" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s2.indexmovies.xyz/wp-content/uploads/2022/12/film-the-marriage-app-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">The Marriage App (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Romance, Argentina, WEBRip, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/3zx3kfmyk8n0jkl" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s4.indexmovies.xyz/wp-content/uploads/2022/12/film-violent-night-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Violent Night (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Action, Comedy, Crime, Canada, United States, WEBRip, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/g26y7t-322wpr7m" target="_blank" class="w3-container w3-quarter w3-padding link" style="display: grid; text-align: center; justify-content: center;">
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s0.indexmovies.xyz/wp-content/uploads/2022/12/film-goodbye-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Goodbye (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Drama, Family, India, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/725dntg0qp75p5w" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s7.indexmovies.xyz/wp-content/uploads/2022/12/film-hawa-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Hawa (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Drama, Family, France, Senegal, WEBDL, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/n-kgzu28rz3pr62" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s2.indexmovies.xyz/wp-content/uploads/2022/11/film-my-fathers-dragon-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">My Father’s Dragon (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Adventure, Animation, Comedy, Ireland, United States, WEBRip, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://layarkacaxxi.icu/v/5q56psd1xg6dw4g" target="_blank" class="w3-container w3-quarter w3-padding link"  style="display: grid; text-align: center; justify-content: center;" >
+            <div class="w3-container w3-black w3-hover-light-grey w3-dropdown-hover w3-round-large" style="padding-top: 15px; padding-bottom:10px;">
+                <img src="https://s5.indexmovies.xyz/wp-content/uploads/2022/12/film-jaifu-story-2022-lk21-d21.jpg" style="height: 400px;">
+                <font style="display:block; padding-top:8px;">Jaifu Story (2022)</font>
+                <div class="w3-dropdown-content w3-bar-block w3-bar-item w3-card-4" style="width: 267.5px; margin-top:9px;">
+                    <p style="padding: 10px; font-size: 12px;">Comedy, Romance, Thailand, WEBRip, 2022, 1080</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+<div id="About" class="w3-container navigation w3-animate-top w3-padding" style="display:none; height: 100vh; text-align: center; background-image:url(https://i.pinimg.com/564x/aa/35/de/aa35de8466d6a708ea87d58c024ab543.jpg);background-repeat: no-repeat; background-size: 100% 100vh; color:white;">
+    <h2>TUGAS 12</h2>
+    <div class="w3-container w3-padding" style="display: flex; justify-content: center; text-align: start;">
+        <div class="w3-card-4" style="width:92%;max-width:300px;">
+            <img src="About.jpg" alt="" style="width:100%;opacity:0.85">
+            <div class="w3-container w3-white">
+            <h4><b>Muhammad Mizan Al Mujadid</b></h4>
+            <table>
+                <tr><td>NIM <td>: 10122096
+                <tr><td>Kelas <td>: IF - 3
+                <tr><td>Cita Cita<td>: UI/UX Designer</td> 
+            </table>
+             
+            </div>
+        </div>
+    </div>
+    
+</div>
+<script src="apps.js"></script>
+</body>
+</body>
+</html>
